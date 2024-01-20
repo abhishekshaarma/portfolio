@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfollio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+<body>
+    <nav id = "desktop-nav">
+        <div class = "logo"> Abhishek Sharma   </div>
+        <div>
+            <ul class = "nav-links">
+                <li> <a href="#about"> About </a></li>    
+                <li> <a href="#experince"> Experience  </a></li>    
+                <li> <a href="#projects"> Projects </a></li>    
+                <li> <a href="#contacts"> Contacts </a></li>    
+            </ul>
+     </div>
+     
+    </nav>
+    <nav id = "hamburger-nav">
+        <div class = "logo"> Abhishek Sharma   </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick = "toggleMenu()">
+                <span> </span>
+                <span> </span>
+                <span> </span>
+                </div>
+                <div class = "menu-links">
+                    <li> <a href="#about" onclick = "toggleMenu()"> About </a></li>    
+                    <li> <a href="#experince" onclick = "toggleMenu()" > Experience  </a></li>    
+                    <li> <a href="#projects" onclick = "toggleMenu()"> Projects </a></li>    
+                    <li> <a href="#contacts" onclick = "toggleMenu()"> Contacts </a></li>   
+    </div>
+                </div>
+    </div>
+    
+    </nav>
+
+<section id = "profile">
+    <div class="section_pic-container">
+        <img src="./assets/profile-picture.png" alt="profile picture " />
+        <div class="section_text">
+            <p class="section_text_p1"> Hello, I'm </p>
+            <h1 class = "title">Abhishek</h1>
+            <p class="section_text_p2"> Student </p>
+            <div class="btn-container">
+                <button class = "btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                    Dowload CV</button>
+                    <div class="btn-container">
+                        <button class = "btn btn-color-1" onclick="location.href = './#contact'">
+                            Contact info</button>
+</div>
+<div id="socials-container">
+    <img src = "./assets/linkedin.png" alt = "linkedin"
+    class = "icon" onclick="location.href='https://www.linkedin.com/in/abseksharma'" />
+    <img src = "./assets/github.png" alt = "github"
+    class = "icon" onclick="location.href='https://github.com/abhishekshaarma'" />
+</div>
+</div>
+</section>
+
+<section id="about">
+    <div class="about-container">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm Abhishek Sharma, a passionate student with a keen interest in web development.
+            I love turning ideas into reality through coding and design. When I'm not coding, you can find
+            me exploring new technologies or working on personal projects. Let's create something amazing together!
+        </p>
+        <!-- Add any additional content or styling as needed -->
+    </div>
+</section>
+
+
+
+<section id="contact-info">
+    <div class="contact-info-container">
+        <h2>Contact Information</h2>
+        <div class="g-recaptcha" data-sitekey="6LdgklYpAAAAAKVwwGMPzaY7pzTTZ_j9JZHmjE4K"></div>
+        <p id="email-placeholder">Email: [Captcha Required]</p>
+        </div>
+</section>
+
+
+<script src="script.js"></script>   
+</body>
+</html>
