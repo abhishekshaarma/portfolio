@@ -273,11 +273,12 @@ color: white;
     gap:1rem;
 }
 
+
 /* About Me Section */
 
 #about {
-    padding: 25vh 0;
-    background-color: #f5f5f5;
+    padding: 20vh 0;
+    background-color: #f0f0f0;
 }
 
 .about-container {
@@ -298,11 +299,47 @@ color: white;
     line-height: 1.6;
 }
 
-/* Adjust the background color and font color as needed */
+/* Additional Info Section */
+/* Additional Info Section */
+
+.additional-info {
+    display: flex;
+    justify-content: space-around;
+    padding: 4vh 0;
+}
+
+.card {
+    border-radius: 8px;
+    width: 45%; /* Adjusted width */
+    max-width: 300px; /* Adjusted max-width */
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #f8f8f8; /* Lighter background color on hover */
+}
+
+.card h3,
+.card p {
+    color: #333; /* Text color */
+}
+
+/* Card-specific styling */
+
+.dedication {
+    background-color: #333; /* Darker initial background color */
+}
+
+.projects {
+    background-color: #333; /* Darker initial background color */
+}
+
 /* Contact Information Section */
 
 #contact-info {
-    padding: 4vh 0;
+    padding: 5vh 0;
     background-color: #f9f9f9;
 }
 
@@ -313,7 +350,7 @@ color: white;
 }
 
 .contact-info-container h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
     color: rgb(20, 53, 53);
 }
@@ -329,4 +366,68 @@ color: white;
 /* Hide email, phone, and address initially */
 #email-placeholder {
     display: none;
+}
+
+
+/* Skills Section */
+/* Skills Section */
+/* Skills Section Styles */
+/* Skills Section */
+
+#skills {
+    padding: 4vh 0;
+    background-color: #f0f0f0;
+}
+
+.skills-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: rgb(20, 53, 53);
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    width: 45%; /* Adjusted width */
+    max-width: 300px; /* Adjusted max-width */
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Adjust background colors and font colors as needed */
+#skills h2 {
+    color: rgb(20, 53, 53);
+}
+
+/* Adjust the background color for each skill card */
+.skill-card {
+    background-color: #fff; /* Lighter background color */
 }
