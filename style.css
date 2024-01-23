@@ -424,10 +424,185 @@ color: white;
 
 /* Adjust background colors and font colors as needed */
 #skills h2 {
+    margin-top:10% ;
     color: rgb(20, 53, 53);
 }
 
 /* Adjust the background color for each skill card */
 .skill-card {
     background-color: #fff; /* Lighter background color */
+}
+
+
+/* Hide email initially */
+#contact-form {
+    display: none;
+}
+
+/* Contact Form Section */
+
+#contact-form {
+    display: none;
+}
+
+/* Contact Form Section */
+
+#contact {
+    background-color: #f4f4f4;
+    padding: 40px;
+    margin-top: 0;
+    display: flex;
+    color: rgb(20, 53, 53);
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+h2{
+    color: rgb(20, 53, 53);
+}
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: rgb(20, 53, 53);
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(20, 53, 53);
+}
+
+/* Show contact form when #contact is added to the URL */
+#contact-form:target {
+    display: block;
+    margin-top: 40px; /* Adjusted margin-top to move it lower */
+}
+
+/* Additional styling for the form */
+#contact-form {
+    margin-top: 20px;
+}
+/* Project Section */
+/* Project Section */
+
+#projects {
+    padding: 4vh 0;
+    margin-top: 50%;
+    display: flex;
+    background-color: #f0f0f0;
+}
+
+.projects-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.projects-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: rgb(20, 53, 53);
+}
+
+.project-card {
+    position: relative;
+    display: flex;
+    overflow: hidden; /* Hide overflow to clip the image */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    background-color: #ddd; /* Lighter background color on hover */
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 1.25rem;
+    color: rgb(20, 53, 53);
+}
+
+.project-card a {
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #ddd;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.project-card a:hover {
+    background-color: rgb(20, 53, 53);
+}
+
+/* Image styling */
+.project-image {
+    width: 150px; /* Set the initial width of the image */
+    
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 5px; /* Adjust the space between the image and content */
+    transition: width 0.3s ease-in-out; /* Transition for the image width */
+}
+
+.project-card:hover .project-image {
+    width: 200px; /* Set the width of the image on hover */
+}
+/* Footer Section */
+
+footer {
+    background-color: rgb(139, 143, 143);
+    color: black;
+    padding: 20px 0;
+}
+
+.footer-container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-container p {
+    margin: 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px; /* Adjust the size of social icons */
+    height: auto;
 }
