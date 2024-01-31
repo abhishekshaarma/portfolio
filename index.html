@@ -87,7 +87,23 @@
     </div>
 </section>
 <!-- Skills Section -->
-
+<div id="container">
+    <div class="steam" id="steam1"> </div>
+    <div class="steam" id="steam2"> </div>
+    <div class="steam" id="steam3"> </div>
+    <div class="steam" id="steam4"> </div>
+  
+    <div id="cup">
+      <div id="cup-body">
+        <div id="cup-shade"></div>
+      </div>
+      <div id="cup-handle"></div>
+    </div>
+  
+    <div id="saucer"></div>
+  
+    <div id="shadow"></div>
+  </div>
 <section id="skills">
     <div class="skills-container">
         <h2>Technical Skills</h2>
@@ -157,78 +173,107 @@
 </section>
 
 <!-- Project Section -->
-
+<!-- Project Section -->
 <section id="projects">
     <div class="projects-container">
         <h2>Projects</h2>
 
-        <!-- Project Cards -->
-        <div class="project-card" id="project1">
-            <h3>></h3>
-            <p> A C++-crafted space shooter game where players defend Earth against relentless alien invaders in intense cosmic battles</p>
-            <a href="#" target="_blank">
-                <!-- Add an image URL for the project -->
-                <img src="assets/galaxy.jpg" alt="Project 1 Image" class="project-image">
-            </a>
+        <!-- Project 1 -->
+        <div class="project-card">
+            <img src="assets/falpy.jpg" alt="Project 1 Image">
+            <div class="project-info">
+                <h3>Flappy Bird <br>AI</h3>
+                <p> 2D game with Pygame, integrating AI using the NEAT-Python library for neural network-based character control. </p>
+                
+                <a href="project1-repo-link" target="_blank">GitHub Repository</a>
+            </div>
         </div>
 
-        <div class="project-card" id="project2">
-            <h3>></h3>
-            <p> An efficient C++ project implementing a quadtree data structure for optimized collision detection in 2D space, enhancing performance in interactive applications and games.</p>
-            <a href="#" target="_blank">
-                
-                <!-- Add an image URL for the project -->
-                <img src="assets/quadtree.png" alt="Project 2 Image" class="project-image">
-            </a>
+        <!-- Project 2 -->
+        <div class="project-card">
+            <img src="assets/quadtree.png" alt="Project 2 Image">
+            <div class="project-info">
+                <h3>QuadTree </h3>
+                <p>A streamlined Quadtree with collision detection in C++ for spatial organization. Optimized entity management and collision detection</p>
+                <a href="project2-repo-link" target="_blank">GitHub Repository</a>
+            </div>
         </div>
-        <div class="project-card" id="project3">
-            <h3>></h3>
-            <p> Dynamic car sales website, showcasing web development and design skills.  </p>
-                
-                <!-- Add an image URL for the project -->
-                <img src="assets/vehicle-5.png" alt="Project 3 Image" class="project-image">
-            </a>
+        <div class="project-card">
+            <img src="assets/vehicle-5.png" alt="Project 3 Image">
+            <div class="project-info">
+                <h3>Kachow </h3>
+                <p>A dynamic car sales website using Javascript and PHP, showcasing web development and design skills as well as database management with interactive features.
+                </p>
+                <a href="project2-repo-link" target="_blank">GitHub Repository</a>
+            </div>
         </div>
+        <div class="project-card">
+            <img src="assets/galaxy.jpg" alt="Project 4 Image">
+            <div class="project-info">
+                <h3>Galaxian Game</h3>
+                <p>Developed a classic arcade-style game in C++ emulating the gameplay of the iconic Galaxian.
+                </p>
+                <a href="project2-repo-link" target="_blank">GitHub Repository</a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/utube.png" alt="Project 5 Image">
+            <div class="project-info">
+                <h3>YT Video Downloader </h3>
+                <p>YouTube video downloader using Python, enabling users to save videos locally.</p>
+                <a href="project2-repo-link" target="_blank">GitHub Repository</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="assets/png-transparent-computer-icons-currency-trade-currency-converter-text-trademark-service-thumbnail.png" alt="Project 6 Image">
+            <div class="project-info">
+                <h3>Currecy Converter</h3>
+                <p>A Python application for currency conversion using an API, providing real-time exchange rates.</p>
+                <a href="project2-repo-link" target="_blank">GitHub Repository</a>
+            </div>
+        </div>
+
 
         <!-- Add more project cards as needed -->
 
     </div>
 </section>
 
+
 <section id="contact">
     <div class="contact-container">
         <h2>Contact Me</h2>
-        <p>
-            Feel free to reach out to me. I'm always open to new opportunities and collaborations.
-        </p>
-        <form action="mailto:abhishekshaarma2@gmail.com" method="post" enctype="text/plain">
+        <p>If you have any inquiries or would like to get in touch, feel free to reach out:</p>
+        <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <input type="submit" value="Send Message">
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+    
+            <button type="submit">Send Email</button>
         </form>
-    </div>
+    
+    </div>      
 </section>
-
-<!-- Footer Section -->
 
 <footer>
     <div class="footer-container">
-        <p>&copy; abhishekshaarma. All rights reserved.</p>
         <div class="social-icons">
-            <a href="https://github.com/abhishekshaarma" target="_blank"><img src="assets/github.png" alt="github"></a>
-            <a href="https://www.linkedin.com/in/abseksharma" target=""><img src="assets/linkedin.png" alt="linkedin"></a>
+            <a href="https://www.linkedin.com/in/abseksharma" target="_blank">
+                <img src="assets/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/abhishekshaarma" target="_blank">
+                <img src="assets/github.png" alt="GitHub">
+            </a>
         </div>
+        <h4>&copy; 2023 Abhishek Sharma | Portfolio</h4>
     </div>
 </footer>
 
-
-<script src="script.js"></script>   
 </body>
 </html>
